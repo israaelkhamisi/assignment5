@@ -1,0 +1,124 @@
+@media screen and (min-width:640px){
+.header{
+    flex-direction: column;
+    align-items: flex-start;
+justify-content: center;
+margin: auto;}
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "cont1"
+    "cont2"
+    "cont3"
+    "cont4"
+    "table"
+    "cont5"
+    "cont6"
+    "cont7"
+    "cont8"
+    "cards";
+  gap: 1rem;
+  align-items: center;
+
+}
+.card-inner,.card-inner0,.card-inner1{
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+.status{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.cont1 h1,
+.cont2 h1,
+.cont3 h1 {
+  padding: 0;
+  margin: 0;
+  font-family:  "IBM Plex Sans Arabic", sans-serif;font-size: 1.5rem;
+}
+
+
+@media screen and (min-width:786px){
+     
+  .container {
+
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  .header {
+
+    grid-column: 1 / -1;
+
+  }
+
+
+  .cont1,
+
+  .cont2,
+
+  .cont3 {
+
+    grid-column: span 1;
+}
+
+
+
+   
+
+
+  @media screen and (min-width:1024px){
+.sidebar{
+    display: flex;width: 250px;
+}
+.container{
+ width: calc(100% - 15.625rem);margin: 0.625rem  15.625rem  0.3125rem 
+  }
+  .header {
+    display: flex;
+    width: 98%;
+    flex-direction: row !important; 
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    background-color: rgb(43, 226, 119);
+  }
+ 
+}
+  @media screen and (min-width:1280px){
+  .right-header{
+    display: flex;flex-direction: row;
+;
+}
+ .status{width: fit-content;}
+ .left-header{
+    display: flex;flex-direction: column;justify-content:flex-end;
+    margin-left: 0;
+ }
+ .cont1 h1,
+.cont2 h1,
+.cont3 h1 {
+  padding: 0;
+  margin: 0;
+  font-family:  "IBM Plex Sans Arabic", sans-serif;font-size: 2.25rem;
+
+}
+.container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "cont1 cont2 cont3"
+      "cont4 table table"
+      "cont5 table table"
+      "cont6 cont7 cards"
+      "cont6 cont8 cards";
+  }
+}
+  }
