@@ -3,15 +3,18 @@
 }
 
 @media screen and (min-width:786px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: auto;
 
-  }
 
-}
+.header 
+    display: flex;
+    width: 98%;
+    flex-direction: row !important;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    background-color: rgb(43, 226, 119);
+
+
 
 .card-inner,.card-inner0,.card-inner1 {
   align-items: center;
@@ -36,6 +39,7 @@
     grid-template-columns: repeat(3, 1fr);
 
   }
+}
 
 .header {
     grid-column: 1 / -1;
