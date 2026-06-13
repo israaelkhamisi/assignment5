@@ -4,32 +4,16 @@
     align-items: flex-start;
 justify-content: center;
 margin: auto;}
-.container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "header"
-    "cont1"
-    "cont2"
-    "cont3"
-    "cont4"
-    "table"
-    "cont5"
-    "cont6"
-    "cont7"
-    "cont8"
-    "cards";
-  gap: 1rem;
-  align-items: center;
+
 
 }
 .card-inner,.card-inner0,.card-inner1{
     align-items: center;
     justify-content: center;
-}
 
 }
+
+
 
 .status{
     width: 100%;
@@ -69,7 +53,7 @@ margin: auto;}
     grid-column: span 1;
 }
 
-
+}
 
    
 
@@ -111,14 +95,44 @@ margin: auto;}
 
 }
 .container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "header header header"
-      "cont1 cont2 cont3"
-      "cont4 table table"
-      "cont5 table table"
-      "cont6 cont7 cards"
-      "cont6 cont8 cards";
-  }
+  margin-bottom: 10px;
+  height: auto;
+ width:calc(100%-250px);align-items: center;
+max-width: 100%;
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr  1fr;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  gap: 1.25rem 0.9375rem ;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "cont1 cont2 cont3"
+    "cont4 table table "
+    "cont5 table table "
+    "cont6 cont7 cards"
+    "cont6 cont8 cards";
+    padding: 0 .625rem;
 }
+.cards {
+  grid-area: cards;
+  width: 95%;
+ max-width: 100%;
+  margin: auto;
+  border: .0625rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1)
+  ;height: 100vh; perspective: 1000px
+}
+.card-inner,.card-inner0,.card-inner1{
+    align-items: center;
+    justify-content: center;
+margin:10px auto;
   }
+
+.card6{
+  height: 100vh;
+}
+}
