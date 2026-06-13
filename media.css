@@ -5,7 +5,7 @@
 @media screen and (min-width:786px) {
 
 
-.header 
+.header{
     display: flex;
     width: 98%;
     flex-direction: row !important;
@@ -13,7 +13,8 @@
     text-align: left;
     align-items: center;
     background-color: rgb(43, 226, 119);
-
+        grid-column: 1 / -1;
+}
 
 
 .card-inner,.card-inner0,.card-inner1 {
@@ -41,10 +42,7 @@
   }
 }
 
-.header {
-    grid-column: 1 / -1;
 
-  }
 
 .cont1, .cont2, .cont3 {
     grid-column: span 1;
