@@ -274,18 +274,23 @@ span {
 }
 
 .container {
-  margin: 5px auto;
+  .container {
+    width: 80%;
+    margin:  15.625rem 0.3125rem
+  
+ ;
   align-items: center;
-  width: 100%;
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "cont1" "cont2" "cont3" "cont4" "table" "cont5" "cont6" "cont7" "cont8" "cards";
   gap: 1rem;
-  align-items: center;
+
 
 }
-
-/** header**/ .header {
+}
+/** header**/ 
+.header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   flex-direction: column;
@@ -1098,8 +1103,7 @@ span {
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  border: none solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+
   padding-top: 20px;
 
 }
@@ -1223,18 +1227,20 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+ border: none !important
+ ;
 }
 
 .tarfeeh {
   width: 90%;
-  border: none solid rgba(0, 0, 0, 0.1);
   padding-top: 20px;
-  border-radius: 10px;
   background-color: #FFFFFF;
   margin:20px auto 10px;
   transition: all 0.5s ease;
   margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 
