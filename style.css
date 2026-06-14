@@ -50,7 +50,7 @@ span {
 
 .sidebar {
   background-color: white;
-  width: 250px;
+  width: 70px;
   grid-area: sidebar;
   display: none;
   flex-direction: column;

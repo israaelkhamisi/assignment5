@@ -66,10 +66,33 @@
 
 
 }
+.logo span,.sidebar > p,.menu,.transaction,.budget,.logo p,
+.savings,.monthly-invoice,.add-transaction span ,.add-money span,
+.pay-invoice span,.investment span{
+  display: none;
+
+}
+
+ 
+
+
+.monthly-invoice::before,.transaction::before,.savings::before,.budget::before,.menu::before{
+  display: inline-block;
+}
+
+.brand i  ,.add-transaction i
+,.add-money i ,.pay-invoice i,.investment i{
+  display: flex;justify-content: center;align-items: center;
+}
+.sidebar{display: flex;
+  align-items: center;width: 70px;flex-direction: column;
+}
 
 
 
-.container {  display: grid;
+.container { 
+  width: calc(100% - 70px);margin-right: 70px
+  ; display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(9,auto);
   grid-auto-columns: 1fr;
@@ -107,7 +130,7 @@ grid-template-areas:
 
 .cont8 { grid-area: cont8; }
 
-.cards { grid-area: cards; }
+.cards { grid-area: cards;height: auto; }
 
 
 }
@@ -115,10 +138,15 @@ grid-template-areas:
 @media screen and (min-width:1024px) {
   .sidebar {
     display: flex;
-    width: 250px;
+    width: 250px !important;flex-direction: column;align-items: center;
 
   }
+.logo span,.logo  p,.sidebar > p,.menu,.transaction,.budget,
+.savings,.monthly-invoice,.add-transaction span ,.add-money span,
+.pay-invoice span,.investment span{
+  display: inline-block;
 
+}
 }
 
 
@@ -192,7 +220,7 @@ grid-template-areas:
 
 .cont8 { grid-area: cont8; }
 
-.cards { grid-area: cards; }
+.cards { grid-area: cards; height: 100vh;}
 
 
 .cards {
